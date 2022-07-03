@@ -1,4 +1,4 @@
-package praktikum_09;
+package praktikum_09_10;
 
 public class BasicSort
 {

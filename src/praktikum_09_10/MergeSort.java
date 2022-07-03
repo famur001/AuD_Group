@@ -1,4 +1,4 @@
-package praktikum_09;
+package praktikum_09_10;
 
 public class MergeSort 
 {
@@ -27,8 +27,16 @@ public class MergeSort
 	// Bottom-Up-Mergesort
 	public static void mergesortBU(int[] array, int[] hilfsarray, final int links, final int rechts)
 	{
-		// TODO: Praktikum 10
-
+		int laenge = links;
+		while (links+laenge <= rechts) {
+			int i = links;
+			while (i + laenge <= rechts) {
+				int r = Math.min(i+2*laenge-1, rechts);
+				merge(array, hilfsarray, i, i+2*laenge-1, r);
+				i = i+2*laenge;
+			}
+			laenge = 2*laenge;
+		}
 	}
 
 	// Mischen der Teilfelder array[links]...array[mitte] und array[mitte+1]...array[rechts]
