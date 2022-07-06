@@ -8,7 +8,7 @@ public class HeapSort
 		int i = pos;
 		int x = array[i];
 		boolean versinkenErforderlich = true;
-		while (2*i+1 <= rechts) {
+		while (2*i+1-links <= rechts) {
 			int j = 2*i+1;
 			if (j+1 <= rechts && array[j] < array[j+1]) { // array[j] > array[j+1])
 				j = j+1;
