@@ -39,4 +39,4 @@ public class Klausur_08_09_2021 {
 	}
 }
 
-//KEINE GEWÄHR
+//KEINE GEWAEHR
