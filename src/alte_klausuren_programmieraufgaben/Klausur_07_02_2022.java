@@ -9,12 +9,14 @@ public class Klausur_07_02_2022 {
 		if (n < 0) return false;
 		if (wurzel == null && n == 0) return true;
 		if (wurzel == null && n > 0) return false;
+		
 		int bbaumHöhe = 1; // Wurzel=>Höhe=1
 		BKnoten[] k = wurzel.kinder; // Unteres Niveau (Foto in VL06 Folie 15)
 		while(k != null) {
 			bbaumHöhe++;
 			k = k.kinder; // weiteres Niveau runtergehen
 		}
+		
 		return (bbaumHöhe > n) ? true : false;
 	}
 	
