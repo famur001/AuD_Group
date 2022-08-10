@@ -30,7 +30,7 @@ public class Klausur_07_09_2021 {
 		if (k.rechtesKind != null)
 			istTeilbaumKleiner(k.rechtesKind, wert);
 		
-		return true; // Wenn die if (k.schlüssel > wert) nie betreten wird, dann ist der ganze Teilbaum kleiner als wert
+		return true;
 	}
 	
 	// Aufgabe 4, c)
