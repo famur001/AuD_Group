@@ -1,13 +1,16 @@
 package alte_klausuren_programmieraufgaben;
 
+/**** SS 2021 – 07.09.2021 (alt4) ****/
 public class Klausur_18_02_2021 {
-	
+
+	// Aufgabe 3, a)
 	public int größterSchlüssel() {
 		// Im Heapbaum steht der größte Schlüssel immer oben im Wurzel
 		//Heapeingenschaft: Schlüssel der Elternknoten sind größer oder gleich als als die Schlüssel ihrer Kinderknoten (siehe VL.10 Folie 22)
 		return wurzel.schlüssel;
 	}
-	
+
+	// Aufgabe 3, b)
 	private boolean istHeapKnoten(HKnoten knoten) {
 		if (knoten == null || knoten.kinder == null)
 			return true;
@@ -18,7 +21,8 @@ public class Klausur_18_02_2021 {
 		
 		return false;
 	}
-	
+
+	// Aufgabe 3, c)
 	private boolean istHeap(HKnoten knoten) {
 		if (!istHeapKnoten(knoten))
 			return false;
@@ -31,3 +35,5 @@ public class Klausur_18_02_2021 {
 		return true; // wenn kein Kind/Knoten die Bedingung "if(!istHeapKnoten(knoten))" erfüllt, dann ist der ganze Baum ein Heap
 	}
 }
+
+//KEINE GEWAEHR (NICHT GETESTET)
