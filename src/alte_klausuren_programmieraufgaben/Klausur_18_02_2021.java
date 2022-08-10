@@ -1,6 +1,6 @@
 package alte_klausuren_programmieraufgaben;
 
-/**** SS 2021 – 07.09.2021 (alt4) ****/
+/**** SS 2020 – 18.02.2021 (alt4) ****/
 public class Klausur_18_02_2021 {
 
 	// Aufgabe 3, a)
